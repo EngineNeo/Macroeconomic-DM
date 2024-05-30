@@ -100,7 +100,7 @@ def fetch_and_filter_news(start_date, end_date, batch_size=30):
                     # In case of no success for fetch move to next batch
                     current_end_date -= timedelta(days=30)
 
-start_date = datetime.now() - timedelta(days=365*5)
+start_date = datetime.now() - timedelta(days=365*8)
 end_date = datetime.now()
 
 fetch_and_filter_news(start_date, end_date, batch_size=30)
